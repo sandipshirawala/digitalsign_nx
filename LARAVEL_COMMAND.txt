@@ -1,0 +1,60 @@
+(1)To run 
+php artisan serve
+
+(2)To Create Controller
+php artisan make:controller sampleController 
+
+(3)To Create Controller with Resource(Methods)
+php artisan make:controller sampleController -r
+
+(4)MIGRATION FROM DATABASE
+https://github.com/kitloong/laravel-migrations-generator
+
+
+(5)php artisan make:model ModelName -a
+To create a:
+
+model
+controller
+seeder
+migration
+factory
+All using one command.
+
+
+(6)
+https://laravel.com/docs/5.2/eloquent#eloquent-model-conventions
+
+
+(7)MODELS FROM database
+
+https://laracasts.com/discuss/channels/laravel/create-migrations-and-models-from-existing-database?page=1&replyId=145181
+
+If you are using MySQL and Laravel 5.1 or above you can use php artisan code:models from this package reliese/laravel. All you need to do is:
+
+-composer require reliese/laravel
+-Add the service provider to your config/app.php file Reliese\Coders\CodersServiceProvider::class
+-Publish the config file with - php artisan vendor:publish --tag=reliese-models
+-Make sure your database is correctly configured in config/database.php and .env files.
+-And finally issue the command: php artisan code:models
+-This package will scan your database and create all models for you. If you need something more specific, you can customize its config file.
+
+Hope this helps :)
+
+For specific table create model
+php artisan code:models --table=car_image
+
+
+(8) CRUD EXAMPLE 
+https://github.com/savanihd/Laravel-8-CRUD/blob/master/resources/views/products/create.blade.php
+
+
+(9) php artisan make:controller cityController --resource --model=City
+
+
+https://techvblogs.com/blog/laravel-9-crud-application-tutorial-with-example
+
+
+(10) sample crud
+https://github.com/masfranzhuo/laravel-simple-CRUD
+
